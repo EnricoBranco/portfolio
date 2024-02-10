@@ -35,7 +35,7 @@ body {
 }
 
 .cabecalho::after {
-  content: url('/img/dragao.svg');
+  content: url('../img/dragao.svg');
   position: absolute;
   z-index: -1;
   top: 0;
@@ -344,7 +344,7 @@ body {
   }
 
   .cabecalho::after {
-    content: url(/img/dragao-menor.svg);
+    content: url(../img/dragao-menor.svg);
   }
 
   .links a {
