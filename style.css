@@ -1,0 +1,188 @@
+:root {
+  --cor-de-fundo: #1A1A1A;
+  --cor-links: #CCC;
+  --cor-titulo-card: #0E0E0E;
+  --cor-paragrafo-card: #2E2E2E;
+  --cor-fundo-card: #DEDEDE;
+  --cor-destaque-maximo: #F7F7F7;
+  --fonte-forte: 'Roboto', serif;
+  --fonte-fraca: 'Inter', serif;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  background: var(--cor-de-fundo);
+  padding: 0 250px;
+  font-family: var(--fonte-fraca);
+  font-size: 24px;
+  font-weight: 400;
+  height: 5000px;
+}
+
+/* header */
+
+.links {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  margin-top: 50px;
+}
+
+.links a {
+  font-family: var(--fonte-forte);
+  font-weight: 600;
+  color: var(--cor-links);
+  text-decoration: none;
+  padding: 15px 20px;
+  font-size: 24px;
+}
+
+.links::after {
+  content: url(/img/dragao.svg);
+  z-index: -5;
+  position: absolute;
+  top: 0;
+  left: 0px;
+}
+
+/* titulo principal */
+
+.principal {
+  display: flex;
+  justify-content: end;
+}
+
+.principal h1 {
+  font-family: var(--fonte-forte);
+  color: var(--cor-destaque-maximo);
+  font-size: 55px;
+  font-weight: 700;
+  max-width: 700px;
+  margin-top: 180px;
+}
+
+/* grid 1 */
+
+.secao-intro {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-columns: auto auto;
+  margin-top: 260px;
+  column-gap: 140px;
+  row-gap: 40px;
+  justify-content: center;
+}
+
+/* foto pefil e descricao */
+
+.info-perfil {
+  display: grid;
+  grid-column: 1/2;
+  grid-row:  1/2;
+  grid-template-columns: 160px auto;
+  grid-template-rows: 1fr;
+  column-gap: 10px;
+  align-self: end;
+  justify-self: center;
+}
+
+.info-perfil img {
+  grid-column: 1/2;
+}
+
+.info-perfil h2{
+  color: #DEDEDE;
+  align-self: start;
+  justify-self: start;
+  font-size: 40px;
+  font-weight: 700;
+  grid-column: 2/3;
+  grid-row: 1/1;
+  padding-top: 10px;
+}
+
+.info-perfil p {
+  color: #B2B2B2;
+  max-width: 550px;
+  line-height: 30px;
+  grid-column: 2/3;
+  grid-row: 1/1;
+  align-self: end;
+  padding-bottom: 10px;
+}
+
+/* card formacao */
+
+.card {
+  background-color: var(--cor-fundo-card);
+  border-radius: 4px;
+  padding: 40px 50px;
+  filter: drop-shadow(0px 7px 0px rgba(222, 222, 222, 0.80));
+}
+
+.card-formacao {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  align-self: end;
+  width: 700px;
+  height: 250px;
+}
+
+.subtitulo {
+  color: var(--cor-titulo-card);
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.card-formacao .paragrafo {
+  max-width: 650px;
+}
+
+.paragrafo {
+  color: var(--cor-paragrafo-card);
+  line-height: 36px;
+  margin-top: 20px;
+}
+
+/* card tecnologias */
+
+.card-tecnologias {
+  grid-column: 2/-1;
+  grid-row: 1/3;
+  align-self: start;
+  width: 380px;
+  height: 510px;
+}
+
+.card-tecnologias p {
+  position: relative;
+  color: #2E2E2E;
+  font-weight: 700;
+  margin-bottom:10px;
+  margin-left: 25px;
+}
+
+.card-tecnologias p::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: -15px;
+  display: block;
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  background: #2E2E2E;
+}
+
+
+
+
+
+
