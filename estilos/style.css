@@ -44,7 +44,7 @@ body {
 }
 
 .links::after {
-  content: url(/img/dragao.svg);
+  content: url(../img/dragao.svg);
   z-index: -5;
   position: absolute;
   top: 0;
