@@ -4,10 +4,12 @@
     font-size: 16px;
   }
 
+  /* header */
+
   .links {
     display: none;
   }
-
+  /* titulo site */
   .principal {
     justify-content: center;
   }
@@ -15,23 +17,33 @@
   .principal h1 {
     font-size: 35px;
     max-width: 350px;
+    margin: 0;
     margin-top: 50px;
     text-align: center;
     line-height: 40px;
   }
 
+  /* secao intro */
 
   .secao-intro {
     display: flex;
     flex-direction: column;
     margin-top: 75px;
+    row-gap: 35px;
   }
 
   .info-perfil {
-    display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    text-align: center;
+  }
+
+  .info-perfil-descricao {
+    margin-bottom: 50px;
+  }
+
+  .info-perfil-descricao h2{
+    margin-bottom: 10px;
   }
 
   .info-perfil img {
@@ -47,10 +59,11 @@
     text-align: center;
     line-height: 25px;
   }
-  
+
+  /* cards */
+
   .card {
     max-width: 250px;
-    height: auto;
     align-self: center;
     padding: 25px 25px;
   }
@@ -65,14 +78,23 @@
     line-height: 25px;
   }
 
-  .card-tecnologias p{
-    
-  }
-
   .card-tecnologias p::before {
     width: 5px;
     height: 5px;
   }
 
+  .card-tecnologias {
+    height: 350px;
+  }
+
+  .card-informacoes {
+    height: 235px;
+  }
+
+  .secao-informacoes {
+    flex-direction: column;
+    margin-top: 35px;
+    gap: 35px;
+  }
 
 }
