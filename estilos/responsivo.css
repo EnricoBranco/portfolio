@@ -63,7 +63,7 @@
   /* cards */
 
   .card {
-    max-width: 250px;
+    max-width: 300px;
     align-self: center;
     padding: 25px 25px;
   }
@@ -154,8 +154,4 @@
   .rodape {
     max-width: 100%;
   }
-
-  .rodape::before {
-  }
-
 }
