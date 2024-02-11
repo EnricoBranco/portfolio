@@ -1,6 +1,6 @@
 @media (max-width: 700px) {
   body {
-    padding: 0 25px;
+    padding: 0 0px;
     font-size: 16px;
   }
 
@@ -103,6 +103,8 @@
 
   .projeto-responsivo {
     display: flex;
+    width: 180px;
+    height: 230px;
   }
 
   .card-projetos {
@@ -117,6 +119,43 @@
 
   .secao-projetos {
     margin-top: 35px;
+  }
+  
+  .secao-projetos::before {
+    display: none;
+  } 
+
+  /* redes */
+
+  .secao-redes {
+    margin-top: 30px;
+  }
+
+  .card-redes {
+    flex-direction: column;
+    height: 300px;
+    gap: 65px;
+  }
+
+  .links-redes {
+    margin-top: 0;
+  }
+
+  .links-redes a{
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .card-redes .subtitulo {
+    position: relative;
+    margin: 0;
+  }
+
+  .rodape {
+    max-width: 100%;
+  }
+
+  .rodape::before {
   }
 
 }
