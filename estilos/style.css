@@ -11,6 +11,7 @@
 
 h1,
 h2,
+h3,
 p {
   margin: 0;
 }
@@ -105,7 +106,7 @@ body {
 
 .card {
   background-color: var(--cor-fundo-card);
-  border-radius: 4px;
+  border-radius: 5px;
   padding: 40px 50px;
   filter: drop-shadow(0px 7px 0px rgba(222, 222, 222, 0.80));
 }
@@ -177,6 +178,43 @@ body {
   width: 360px;
   height: 380px;
 }
+
+/* secao projetos */
+
+.secao-projetos {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+.card-projetos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  place-content: end center;
+  padding-bottom: 70px;
+  width: 1320px;
+  height: 790px;
+}
+
+.secao-projetos .subtitulo {
+  position: absolute;
+}
+
+.projeto {
+  height: 300px;
+  width: 260px;
+  background: linear-gradient(180deg, #373737 0%, #141414 100%);
+  border-radius: 5px;
+}
+
+.projeto h3 {
+  color: var(--cor-destaque-maximo);
+  height: 700;
+  max-width: 180px;
+  padding: 30px;
+}
+
 
 
 

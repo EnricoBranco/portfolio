@@ -97,4 +97,26 @@
     gap: 35px;
   }
 
+  .projeto {
+    display: none;
+  }
+
+  .projeto-responsivo {
+    display: flex;
+  }
+
+  .card-projetos {
+    align-content: end;
+    height: 700px;
+    padding-bottom: 50px;
+  }
+
+  .secao-projetos .subtitulo {
+    top: 25px;
+  }
+
+  .secao-projetos {
+    margin-top: 35px;
+  }
+
 }
